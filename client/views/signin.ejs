@@ -15,13 +15,6 @@
     />
 
     <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-
-    <link
       href="https://fonts.googleapis.com/css?family=Pacifico&display=swap"
       rel="stylesheet"
     />
@@ -31,55 +24,56 @@
     <link href="login.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-          <div class="card card-signin my-5">
-            <div class="card-body">
-              <h5 class="card-title text-center">Sign In</h5>
-              <form class="form-signin" method="POST" action="/signin">
-                <div class="form-label-group">
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    class="form-control"
-                    placeholder="Email address"
-                    required
-                    autofocus
-                  />
-                  <label for="email">Email address</label>
-                </div>
-
-                <div class="form-label-group">
-                  <input
-                    type="password"
-                    id="password"
-                    name="password"
-                    class="form-control"
-                    placeholder="Password"
-                    required
-                  />
-                  <label for="password">Password</label>
-                </div>
-
-                <button
-                  class="btn btn-lg btn-primary btn-block text-uppercase"
-                  type="submit"
-                >
-                  Sign in
-                </button>
-                <hr class="my-4" />
-                <button
-                  class="btn btn-lg btn-google btn-block text-uppercase"
-                  type="submit"
-                ></i> New User? Sign up Here
-                </button>
-              </form>
-            </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            SIGN IN
+        </div>
+        
+        <form method="POST" action="/signin">
+          <div class="grid-item grid-bar">
+            <input 
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Email address"
+            required
+            autofocus
+            />
           </div>
+
+          <div class="grid-item grid-bar">
+            <input
+            type="password"
+            id="password"
+            name="password"
+            class="form-control"
+            placeholder="Password"
+            required
+            />
+          </div>
+
+          <div class="grid-item grid-bar">
+          <button
+          class="btn btn-primary"
+          type="submit"
+          >
+            Sign in
+          </button>
+          </div>
+          <hr />
+        </form>
+          <div class="grid-item grid-bar">
+
+          <form method="GET" action="/signup">
+          <button
+          class="btn btn-google"
+          type="submit"
+          ></i> New User? Sign up
+          </button>
+          </form>
         </div>
       </div>
-    </div>
   </body>
 </html>
+ 

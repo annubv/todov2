@@ -1,5 +1,4 @@
 const db = require("../databases/sqlite");
-const lists = db.lists;
 const users = db.users;
 
 const signuppage = (req, res) => {
@@ -16,8 +15,9 @@ const signupuser = (req, res) => {
       password
     })
     .then(result => {
+      req.session.user = { email, name };
       console.log("Added" + result);
-      return res.render("signup");
+      return res.redirect("/");
     })
     .catch(err => console.log(err));
 };

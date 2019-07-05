@@ -32,16 +32,14 @@ const signinuser = (req, res) => {
     })
     .catch(err => {
       console.log(err);
-      return res.send("HATT BE");
+      return res.send("DENIED");
     });
 };
 
 const signout = (req, res) => {
-  req.session.destroy(err => {
-    console.log(err);
-    return res.redirect("/");
+  req.session.destroy(() => {
+    console.log("err occured :( ");
   });
-  res.clearCookies("sid");
   res.redirect("/");
 };
 
