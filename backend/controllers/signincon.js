@@ -16,19 +16,23 @@ const signinuser = (req, res) => {
       }
     })
     .then(r => {
-      console.log(r);
-      lists
-        .findAll({
-          where: {
-            email: email
-          }
-        })
-        .then(result => {
-          req.session.user = { email, name: r.name };
-          console.log(result);
-          return res.redirect("/");
-        })
-        .catch(err => console.log(err));
+      if (r != null) {
+        console.log(r);
+        lists
+          .findAll({
+            where: {
+              email: email
+            }
+          })
+          .then(result => {
+            req.session.user = { email, name: r.name };
+            console.log(result);
+            return res.redirect("/");
+          })
+          .catch(err => console.log(err));
+      } else {
+        res.redirect("/signin");
+      }
     })
     .catch(err => {
       console.log(err);
