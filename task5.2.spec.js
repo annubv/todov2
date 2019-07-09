@@ -11,8 +11,8 @@ const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
 const wget = require("wget-improved");
-const src = "http://localhost:4000/signin";
-const output = "./signin.html";
+const src = "http://localhost:4000/profile";
+const output = "./profle.html";
 
 let download = wget.download(src, output);
 
@@ -28,7 +28,7 @@ const readData = path => {
   });
 };
 
-readData("./signin.html").then(res => {
+readData("./profile.html").then(res => {
   const create_data = res;
   const dom = new JSDOM(create_data);
   
@@ -41,7 +41,7 @@ readData("./signin.html").then(res => {
     });
     it("should check content", done => {
         expect(dom.window.document.getElementsByTagName("button").length).to.equal(
-          2
+          6
         );
         done();
       });
@@ -49,7 +49,7 @@ readData("./signin.html").then(res => {
 })
 
 
-console.log("1");
+
   describe("TODO Testcases-1 #start_test", function() {
     it("should check contents", done => {
       expect(1).to.equal(
