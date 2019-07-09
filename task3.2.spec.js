@@ -35,7 +35,7 @@ readData("./signin.html").then(res => {
   describe("TODO Testcases-1 #start_test", function() {
     it("should check content", done => {
       expect(dom.window.document.getElementsByTagName("input").length).to.equal(
-        2
+        3
       );
       done();
     });
@@ -48,21 +48,16 @@ readData("./signin.html").then(res => {
   });
 })
 
+
 console.log("1");
-//   describe("TODO Testcases-1 #start_test", function() {
-//     it("should check contents", done => {
-//       expect(dom.window.document.getElementsByTagName("input").length).to.equal(
-//         2
-//       );
-//       done();
-//     });
-//     it("should check contents", done => {
-//         expect(dom.window.document.getElementsByTagName("button").length).to.equal(
-//           2
-//         );
-//         done();
-//       });
-//   });
+  describe("TODO Testcases-1 #start_test", function() {
+    it("should check contents", done => {
+      expect(1).to.equal(
+        1
+      );
+      done();
+    });
+  });
 
 
 // describe("HTTP Testcases-2", function() {
