@@ -20,6 +20,7 @@
     "morgan": "^1.9.1",
     "sequelize": "^5.9.0",
     "sqlite3": "^4.0.9",
-    "supertest": "^4.0.2"
+    "supertest": "^4.0.2",
+    "wget-improved": "^3.0.2"
   }
 }

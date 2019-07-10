@@ -1,6 +1,6 @@
 # Task 4
 
-Create the Signin ejs page
+Create the Signup ejs page
 
 In this tasks, build the frontend i.e., ejs file of the signin page.
 This page must have three input fields: one for name, one for email and another for password.
