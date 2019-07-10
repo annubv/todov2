@@ -57,6 +57,7 @@ describe("TODO Testcases", function() {
       .end(function(err, res) {
         assert.equal(res.status, 200);
         done();
+        process.exit();
       });
   });
 });

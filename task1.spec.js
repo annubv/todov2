@@ -64,6 +64,7 @@ describe("Task 1 test part 2 #end_test", function() {
       .end(function(err, res) {
         assert.equal(res.status, 200);
         done();
+        process.exit();
       });
   });
 });

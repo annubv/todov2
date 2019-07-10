@@ -48,10 +48,11 @@ describe("Task 1 tests #start_test", function() {
       done();
     });
   });
-  it("should ensure db exist", done => {
+  it("should ensure db exist #end_test", done => {
     f3("./backend/databases/database.sqlite").then(res => {
       expect(res).to.equal(1);
       done();
+      process.exit();
     });
   });
 });

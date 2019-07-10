@@ -4,12 +4,12 @@ const assert = require("chai").assert;
 
 var Cookies;
 
-describe("Functional Test <Sessions>:", function() {
+describe("Functional Test #start_test", function() {
   it("should create user session for valid user", function(done) {
     request(app)
       .post("/signin")
       .set("Accept", "application/json")
-      .send({ email: "aa@aa.com", password: "123" })
+      .send({ email: "john@wick.com", password: "123" })
       .end(function(err, res) {
         if (err) return done(err);
         assert.equal(res.status, 302);
@@ -32,7 +32,7 @@ describe("Functional Test <Sessions>:", function() {
         done();
       });
   });
-  it("should create user session for valid user 3", function(done) {
+  it("should create user session for valid user 3 #end_test", function(done) {
     request(app)
       .post("/signin")
       .set("Accept", "application/json")
@@ -44,6 +44,7 @@ describe("Functional Test <Sessions>:", function() {
         assert.equal(Cookies, undefined);
         console.log("The Cookie: " + Cookies);
         done();
+        process.exit();
       });
   });
 });

@@ -37,7 +37,7 @@ describe("Todo TC2 #start_test", function() {
       done();
     });
   });
-  it("should check page 2", done => {
+  it("should check page 2 #end_test", done => {
     readData("./signin2.html").then(res => {
       const create_data = res;
       const dom = new JSDOM(create_data);
@@ -45,6 +45,7 @@ describe("Todo TC2 #start_test", function() {
         dom.window.document.getElementsByTagName("button").length
       ).to.equal(2);
       done();
+      process.exit();
     });
   });
 });

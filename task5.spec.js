@@ -23,7 +23,7 @@ describe("Session tests #start_test:", function() {
     request(app)
       .post("/signup")
       .set("Accept", "application/json")
-      .send({ name: "gg", email: "g@g.com", password: "123" })
+      .send({ name: "gg", email: "ag@g.com", password: "123" })
       .end(function(err, res) {
         if (err) return done(err);
         assert.equal(res.status, 302);
@@ -31,6 +31,7 @@ describe("Session tests #start_test:", function() {
         assert.notEqual(Cookies, undefined);
         console.log("The Cookie: " + Cookies);
         done();
+        process.exit();
       });
   });
 });

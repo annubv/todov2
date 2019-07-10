@@ -23,7 +23,7 @@ describe("Session tests #start_test:", function() {
     request(app)
       .post("/signup")
       .set("Accept", "application/json")
-      .send({ name: "aa", email: "aabbvs@aa.aa", password: "123" })
+      .send({ name: "aa", email: "aasbbvs@aa.aa", password: "123" })
       .end(function(err, res) {
         if (err) return done(err);
 
@@ -39,9 +39,11 @@ describe("Session tests #start_test:", function() {
             dom.window.document.getElementsByTagName("input").length
           ).to.equal(1);
           done();
+          process.exit();
         });
 
         done();
+        process.exit();
       });
   });
 });
