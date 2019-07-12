@@ -1,0 +1,211 @@
+{
+  "tags": [],
+  "_id": "5d28f5ba97d65027f7e84d35",
+  "title": "To Do List",
+  "description": "An individual or collaborative enterprise that is carefully planned to achieve a particular aim.",
+  "author": "5b9a958e18c93c5bef623534",
+  "createdAt": "2019-07-12T21:03:54.401Z",
+  "updatedAt": "2019-07-12T21:03:54.401Z",
+  "__v": 0,
+  "article_main": "5d26b8ff11fda909eafe9fa7",
+  "required_files": [
+    "task1.spec.js",
+    "task2.spec.js",
+    "task3.spec.js",
+    "task4.spec.js",
+    "task5.spec.js",
+    "task6.spec.js",
+    "task7.spec.js",
+    "task8.spec.js",
+    "task9.spec.js",
+    "package.json"
+  ],
+  "tasks": [
+    {
+      "title": " To-Do Task 1",
+      "description": "Build the basic MVC structure of the app",
+      "tags": [" Expressjs", " Node", " server", " sessions", " ejs"],
+      "command": "npm run test1",
+      "files": [],
+      "articles": [
+        "5d29018ae192ef28ae511d09",
+        "5d29026ee192ef28ae511d1d",
+        "5d2902b1e192ef28ae511d1e",
+        "5d290139e192ef28ae511d00"
+      ],
+      "type": "script",
+      "isGui": false,
+      "hasEditor": true,
+      "index": 1,
+      "level": 2
+    },
+    {
+      "title": " To-Do Task 2",
+      "description": "Create sqlite database",
+      "tags": [
+        " Expressjs",
+        " Node",
+        " server",
+        " sessions",
+        " ejs",
+        " database",
+        " sqlite"
+      ],
+      "command": "npm run test2",
+      "files": [],
+      "articles": ["5d290144e192ef28ae511d01"],
+      "type": "script",
+      "isGui": false,
+      "hasEditor": true,
+      "index": 2,
+      "level": 2
+    },
+    {
+      "title": " To-Do Task 3",
+      "description": "Create the Signin ejs page",
+      "tags": [
+        " Expressjs",
+        " Node",
+        " server",
+        " sessions",
+        " ejs",
+        " database",
+        " sqlite"
+      ],
+      "command": "npm run test3",
+      "files": [],
+      "articles": ["5d29014ce192ef28ae511d02"],
+      "type": "script",
+      "isGui": false,
+      "hasEditor": true,
+      "index": 3,
+      "level": 2
+    },
+    {
+      "title": " To-Do Task 4",
+      "description": "Create the Signup ejs page",
+      "tags": [
+        " Expressjs",
+        " Node",
+        " server",
+        " sessions",
+        " ejs",
+        " database",
+        " sqlite"
+      ],
+      "command": "npm run test4",
+      "files": [],
+      "articles": ["5d290153e192ef28ae511d03"],
+      "type": "script",
+      "isGui": false,
+      "hasEditor": true,
+      "index": 4,
+      "level": 2
+    },
+    {
+      "title": " To-Do Task 5",
+      "description": "Complete the signin and signup forms",
+      "tags": [
+        " Expressjs",
+        " Node",
+        " server",
+        " sessions",
+        " ejs",
+        " database",
+        " sqlite"
+      ],
+      "command": "npm run test5",
+      "files": [],
+      "articles": ["5d29015ae192ef28ae511d04"],
+      "type": "script",
+      "isGui": false,
+      "hasEditor": true,
+      "index": 5,
+      "level": 2
+    },
+    {
+      "title": " To-Do Task 6",
+      "description": "Create the profile ejs page",
+      "tags": [
+        " Expressjs",
+        " Node",
+        " server",
+        " sessions",
+        " ejs",
+        " database",
+        " sqlite"
+      ],
+      "command": "npm run test6",
+      "files": [],
+      "articles": ["5d290161e192ef28ae511d05"],
+      "type": "script",
+      "isGui": false,
+      "hasEditor": true,
+      "index": 6,
+      "level": 3
+    },
+    {
+      "title": " To-Do Task 7",
+      "description": "Add functionalities to the to-do buttons",
+      "tags": [
+        " Expressjs",
+        " Node",
+        " server",
+        " sessions",
+        " ejs",
+        " database",
+        " sqlite"
+      ],
+      "command": "npm run test7",
+      "files": [],
+      "articles": ["5d29016ae192ef28ae511d06"],
+      "type": "script",
+      "isGui": false,
+      "hasEditor": true,
+      "index": 7,
+      "level": 3
+    },
+    {
+      "title": " To-Do Task 8",
+      "description": "Add required middlewares",
+      "tags": [
+        " Expressjs",
+        " Node",
+        " server",
+        " sessions",
+        " ejs",
+        " database",
+        " sqlite"
+      ],
+      "command": "npm run test7",
+      "files": [],
+      "articles": ["5d290171e192ef28ae511d07"],
+      "type": "script",
+      "isGui": false,
+      "hasEditor": true,
+      "index": 8,
+      "level": 2
+    },
+    {
+      "title": " To-Do Task 9",
+      "description": "Finalize your app",
+      "tags": [
+        " Expressjs",
+        " Node",
+        " server",
+        " sessions",
+        " ejs",
+        " database",
+        " sqlite"
+      ],
+      "command": "npm run test9",
+      "files": [],
+      "articles": ["5d290179e192ef28ae511d08"],
+      "type": "script",
+      "isGui": false,
+      "hasEditor": true,
+      "index": 9,
+      "level": 3
+    }
+  ]
+}
