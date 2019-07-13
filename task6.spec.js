@@ -23,12 +23,12 @@ describe("Session tests #start_test:", function() {
     request(app)
       .post("/signup")
       .set("Accept", "application/json")
-      .send({ name: "aa", email: "aasbbvs@aa.aa", password: "123" })
+      .send({ name: "John Wick", email: "john@wick.com", password: "mydog<3" })
       .end(function(err, res) {
         if (err) return done(err);
 
         const wget = require("wget-improved");
-        const src = "http://localhost:5000";
+        const src = "http://localhost:4000";
         const output = "./profile.html";
         let download = wget.download(src, output);
 

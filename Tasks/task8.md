@@ -32,7 +32,7 @@ Thus ensuring there isn't a session, before making get request on `/signin`.
 Use the below command to run your app:
 
 ```
-npm run task8
+npm run app
 ```
 
 Use the below command to test your app:

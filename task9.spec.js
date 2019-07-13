@@ -9,7 +9,7 @@ describe("Functional Test #start_test", function() {
     request(app)
       .post("/signin")
       .set("Accept", "application/json")
-      .send({ email: "john@wick.com", password: "123" })
+      .send({ email: "john@wick.com", password: "mydog<3" })
       .end(function(err, res) {
         if (err) return done(err);
         assert.equal(res.status, 302);
@@ -19,24 +19,20 @@ describe("Functional Test #start_test", function() {
         done();
       });
   });
-  it("should create user session for valid user 2", function(done) {
+  it("should check signin", function(done) {
     request(app)
       .get("/signin")
       .set("Accept", "application/json")
-      //.send({ email: "abfsda@aa.com", password: "123" })
       .end(function(err, res) {
         assert.equal(res.status, 200);
-        //assert.equal(req.header["cookie"], Cookies);
-        //Cookies = res.header["set-cookie"];
-        console.log("The Cookie: " + Cookies);
         done();
       });
   });
-  it("should create user session for valid user 3 #end_test", function(done) {
+  it("shouldn't create user session for invalid user #end_test", function(done) {
     request(app)
       .post("/signin")
       .set("Accept", "application/json")
-      .send({ email: "aaff@aa.com", password: "123" })
+      .send({ email: "linkin@park.com", password: "messi" })
       .end(function(err, res) {
         if (err) return done(err);
         assert.equal(res.status, 302);

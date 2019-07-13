@@ -8,7 +8,7 @@ const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
 const wget = require("wget-improved");
-const src = "http://localhost:5000/signup";
+const src = "http://localhost:4000/signup";
 const output = "./signup.html";
 
 let download = wget.download(src, output);
@@ -25,9 +25,16 @@ const readData = path => {
   });
 };
 
-describe("Todo TC2 #start_test", function() {
-  this.timeout(1000);
-  it("shouldo check page", done => {
+describe("Todo Testcases #start_test", function() {
+  it("should check dummy", done => {
+    readData("./signup.html").then(res => {
+      const create_data = res;
+      const dom = new JSDOM(create_data);
+      expect(3).to.equal(3);
+      done();
+    });
+  });
+  it("should check signup page's input fields", done => {
     readData("./signup.html").then(res => {
       const create_data = res;
       const dom = new JSDOM(create_data);
@@ -37,7 +44,7 @@ describe("Todo TC2 #start_test", function() {
       done();
     });
   });
-  it("shouldo check page", done => {
+  it("should check signup page's buttons", done => {
     readData("./signup.html").then(res => {
       const create_data = res;
       const dom = new JSDOM(create_data);

@@ -13,7 +13,7 @@ Also create three views (empty for now) named : signin, signup and profile.
 Use the below command to run your app:
 
 ```
-npm run task1
+npm run app
 ```
 
 Use the below command to test your app:

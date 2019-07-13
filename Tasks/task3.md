@@ -10,7 +10,7 @@ Route this page to `/signin`.
 Use the below command to run your app:
 
 ```
-npm run task3
+npm run app
 ```
 
 Use the below command to test your app:

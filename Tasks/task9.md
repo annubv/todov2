@@ -11,7 +11,7 @@ Note : Usage of Bootstrap is not recommended for making the layout. Rather use N
 Use the below command to run your app:
 
 ```
-npm run task9
+npm run app
 ```
 
 Use the below command to test your app:

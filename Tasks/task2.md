@@ -27,7 +27,7 @@ Note that the id column in the table is automatically generated, so you need not
 Use the below command to run your app:
 
 ```
-npm run task2
+npm run app
 ```
 
 Use the below command to test your app:

@@ -32,7 +32,7 @@ app.use("/", alpharoutes);
 app.engine("html", ejs.renderFile);
 app.set("views", __dirname + "/client/views");
 app.set("view engine", "ejs");
-app.set("port", process.env.PORT || 5000);
+app.set("port", process.env.PORT || 4000);
 
 app.listen(app.get("port"), () => {
   console.log("App running on port" + app.get("port"));

@@ -12,7 +12,7 @@ In this tasks, add functionality to the three buttons of the to-dos.
 Use the below command to run your app:
 
 ```
-npm run task7
+npm run app
 ```
 
 Use the below command to test your app:
